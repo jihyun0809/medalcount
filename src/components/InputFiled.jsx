@@ -1,4 +1,4 @@
-const InputFiled = ({ name, type, value, onChange, id, placeholder, }) => {
+const InputFiled = ({ name, type, value, onChange, id, placeholder }) => {
   return (
     <div className="countryInput">
       <label htmlFor={id}>{name}</label>
@@ -9,25 +9,24 @@ const InputFiled = ({ name, type, value, onChange, id, placeholder, }) => {
         value={value}
         onChange={onChange}
         placeholder={placeholder ? placeholder : null}
-
       />
-
     </div>
-  )
-}
+  );
+};
 
-export default InputFiled
+export default InputFiled;
 
-
-{/* <div>
+{
+  /* <div>
 <label htmlFor="name">국가명🏁</label>
 name="name"
  type="text"
  onChange={inputCountryName} />
-</div> */}
+</div> */
+}
 
-
-{/* <div>
+{
+  /* <div>
 <label htmlFor="bronze">동메달</label>
  <input
  id="bronze"
@@ -35,4 +34,5 @@ name="name"
 name="bronze"
  value={bronzeMedal}
 onChange={inputBronzeMedal} />
- </div> */}
+ </div> */
+}
